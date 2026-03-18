@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #031745;
+  
+  /* BeeSeek Official Palette */
+  --navy: #031745;
+  --navy-light: #98B5F4;
+  --navy-dark: #050A17;
+  
+  --blue: #0050B4;
+  --blue-light: #B2D1FF;
+  --blue-dark: #002454;
+  
+  --grey: #6B7280;
+  --neutral: #F8F9FA;
+  --grey-dark: #2E2E2E;
+  
+  --green: #00C164;
+  --green-light: #A6FFD3;
+  --green-dark: #00331B;
+  
+  --orange: #DE852C;
+  --orange-light: #FFD8B5;
+  --orange-dark: #552400;
+
+  /* Semantic Aliases */
+  --primary: var(--navy);
+  --primary-light: var(--navy-light);
+  --secondary: var(--blue);
+  --accent: var(--orange);
+  --accent-light: var(--orange-light);
+  --success: var(--green);
+  --muted: var(--grey);
+  --surface: var(--neutral);
+  --border: #E5E5E5;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
+  --color-navy-dark: var(--navy-dark);
+  
+  --color-blue: var(--blue);
+  --color-blue-light: var(--blue-light);
+  --color-blue-dark: var(--blue-dark);
+  
+  --color-grey: var(--grey);
+  --color-neutral: var(--neutral);
+  --color-grey-dark: var(--grey-dark);
+  
+  --color-green: var(--green);
+  --color-green-light: var(--green-light);
+  --color-green-dark: var(--green-dark);
+  
+  --color-orange: var(--orange);
+  --color-orange-light: var(--orange-light);
+  --color-orange-dark: var(--orange-dark);
+
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-success: var(--success);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-jakarta antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+}
+
+@layer components {
+  .legal-content h1 {
+    @apply text-3xl font-bold text-navy mb-6;
+  }
+  .legal-content h2 {
+    @apply text-xl font-bold text-navy mt-8 mb-4 border-b pb-2;
+  }
+  .legal-content h3 {
+    @apply text-lg font-semibold text-navy mt-6 mb-3;
+  }
+  .legal-content p {
+    @apply text-grey-dark leading-relaxed mb-4;
+  }
+  .legal-content ul {
+    @apply list-disc pl-6 mb-4 space-y-2 text-grey-dark;
+  }
+  .legal-content section {
+    @apply mb-10;
+  }
+}
