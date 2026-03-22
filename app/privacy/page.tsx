@@ -52,7 +52,7 @@ export default function PrivacyPage() {
         <ul>
             <li><strong>Service Delivery:</strong> Matching clients with nearby agents using geo-proximity (default 15km).</li>
             <li><strong>Identity Verification:</strong> Verifying NIN via Monnify and conducting AML/PEP screening via YouVerify.</li>
-            <li><strong>Safety:</strong> SOS dispatch via Termii SMS, Agent drift detection (50km safety filter).</li>
+            <li><strong>Safety:</strong> SOS alerts sent from the user's own device via the native SMS app, Agent drift detection (50km safety filter).</li>
             <li><strong>Payments:</strong> Processing escrow transactions, virtual accounts, and disbursements.</li>
             <li><strong>Communication:</strong> Real-time chat, transactional emails via Resend, and push notifications.</li>
         </ul>
@@ -64,7 +64,7 @@ export default function PrivacyPage() {
         <ul>
             <li><strong>Monnify:</strong> NIN verification and financial disbursements.</li>
             <li><strong>Google Maps:</strong> Reverse geocoding for location context.</li>
-            <li><strong>Termii:</strong> SMS delivery for emergency SOS alerts.</li>
+            <li><strong>Termii:</strong> SMS delivery for OTP verification (when enabled).</li>
             <li><strong>YouVerify:</strong> AML/PEP/Sanctions screening.</li>
             <li><strong>Cloudinary:</strong> Secure image hosting and delivery.</li>
             <li><strong>Resend:</strong> Transactional email delivery.</li>

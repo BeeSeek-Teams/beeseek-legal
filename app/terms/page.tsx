@@ -54,7 +54,7 @@ export default function TermsPage() {
         <ul>
             <li><strong>Arrival Verification:</strong> Agents must enter the Client's 4-digit Arrival Code to start the timer.</li>
             <li><strong>Auto-Release:</strong> If a Client does not release payment within 72 hours of work being marked "Finished", funds are automatically moved to the Agent's wallet.</li>
-            <li><strong>SOS System:</strong> Provides one-tap access to 112/199/122 and alerts emergency contacts via SMS (Termii) with GPS coordinates.</li>
+            <li><strong>SOS System:</strong> Provides one-tap access to 112/199/122 and opens the device SMS app with a pre-filled emergency message containing GPS coordinates to alert your emergency contact.</li>
         </ul>
       </section>
 

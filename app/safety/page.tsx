@@ -3,7 +3,7 @@ import PolicyLayout from "@/components/PolicyLayout";
 
 export default function SafetyPage() {
   return (
-    <PolicyLayout title="Safety & Emergency Disclaimer" lastUpdated="March 18, 2026" version="2.0">
+    <PolicyLayout title="Safety & Emergency Disclaimer" lastUpdated="March 22, 2026" version="2.1">
       <section>
         <p>BeeSeek prioritizes the physical and digital safety of our community. Please review our safety frameworks and limitations.</p>
       </section>
@@ -13,7 +13,7 @@ export default function SafetyPage() {
       </section>
       <section>
         <h2>2. ALERTS & NOTIFICATIONS</h2>
-        <p>The "Alert Emergency Contact" feature sends your <strong>real-time GPS coordinates</strong> and device battery level to your designated emergency contact via SMS (Termii gateway).</p>
+        <p>The "Alert Emergency Contact" feature opens your device's SMS app with a pre-filled emergency message containing your <strong>real-time GPS coordinates</strong> and device battery level. The SMS is sent from your own phone number to your designated emergency contact.</p>
       </section>
       <section>
         <h2>3. SAFETY PROTOCOLS</h2>
@@ -24,7 +24,7 @@ export default function SafetyPage() {
       </section>
       <section>
         <h2>4. LIMITATION OF LIABILITY</h2>
-        <p>BeeSeek's SOS feature is <strong>NOT</strong> a substitute for direct communication with law enforcement or emergency services. BeeSeek is not responsible for SMS network delays or third-party response times.</p>
+        <p>BeeSeek's SOS feature is <strong>NOT</strong> a substitute for direct communication with law enforcement or emergency services. BeeSeek is not responsible for SMS delivery failures, carrier issues, or third-party response times. The SMS is sent from the user's own device and carrier plan; BeeSeek does not control delivery.</p>
       </section>
     </PolicyLayout>
   );
