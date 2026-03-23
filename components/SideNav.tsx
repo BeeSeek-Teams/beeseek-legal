@@ -14,7 +14,8 @@ import {
   Wallet, 
   WarningCircle, 
   HandPointing, 
-  Copyright
+  Copyright,
+  Scales
 } from "@phosphor-icons/react";
 import { clsx } from "clsx";
 
@@ -26,6 +27,7 @@ const navItems = [
   { name: "Cancellation & Refund", href: "/refund", icon: ArrowsLeftRight },
   { name: "Community Guidelines", href: "/community", icon: Users },
   { name: "Dispute Resolution", href: "/dispute", icon: Gavel },
+  { name: "SLA & Infractions", href: "/infractions", icon: Scales },
   { name: "Payments & Wallet", href: "/wallet", icon: Wallet },
   { name: "Safety Disclaimer", href: "/safety", icon: WarningCircle },
   { name: "Acceptable Use", href: "/acceptable-use", icon: HandPointing },
