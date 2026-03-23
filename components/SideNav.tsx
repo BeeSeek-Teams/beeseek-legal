@@ -38,38 +38,38 @@ export default function SideNav({ onItemClick }: { onItemClick?: () => void }) {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full md:w-80 h-full p-4 md:p-0 md:sticky md:top-8 md:pr-4 md:border-r border-border scrollbar-hide">
+    <nav className="w-full md:w-80 h-full p-4 md:p-0 md:sticky md:top-8 md:pr-4 md:border-r border-black/[0.04] scrollbar-hide">
       <div className="mb-10 px-4 md:px-0">
         <Link href="/" className="inline-block" onClick={onItemClick}>
-            <h2 className="text-2xl font-bold text-navy">BeeSeek <span className="text-accent">Legal</span></h2>
+            <h2 className="text-2xl font-black text-navy tracking-tight">BeeSeek <span className="text-accent">Legal</span></h2>
         </Link>
-        <p className="text-sm text-grey mt-2">Official Policy Documentation</p>
+        <p className="text-[13px] text-black/40 mt-2 font-medium">Official Policy Documentation</p>
       </div>
 
-      <div className="space-y-1">
+      <div className="space-y-0.5">
         {navItems.map((item) => (
           <Link
             key={item.href}
             href={item.href}
             onClick={onItemClick}
             className={clsx(
-              "flex items-center gap-3 px-4 py-3 rounded-xl transition-all group",
+              "flex items-center gap-3 px-4 py-2.5 rounded-xl transition-all group",
               pathname === item.href 
-                ? "bg-navy text-white shadow-lg shadow-navy/20" 
-                : "text-grey hover:bg-neutral hover:text-navy"
+                ? "bg-navy text-white shadow-lg shadow-navy/15" 
+                : "text-black/50 hover:bg-black/[0.03] hover:text-navy"
             )}
           >
-            <item.icon size={20} weight={pathname === item.href ? "fill" : "regular"} className={clsx(
-                pathname === item.href ? "text-accent-light" : "text-grey group-hover:text-navy"
+            <item.icon size={18} weight={pathname === item.href ? "fill" : "duotone"} className={clsx(
+                pathname === item.href ? "text-accent-light" : "text-black/30 group-hover:text-navy"
             )} />
-            <span className="font-medium text-[15px]">{item.name}</span>
+            <span className="font-medium text-[14px]">{item.name}</span>
           </Link>
         ))}
       </div>
 
       <div className="mt-12 px-5 py-6 bg-navy-dark rounded-2xl text-white">
-        <p className="text-[10px] text-navy-light uppercase tracking-widest font-black mb-2">Need Support?</p>
-        <p className="text-sm text-white/70 mb-5 leading-relaxed font-medium">Have questions regarding our legal standing or data practices?</p>
+        <p className="text-[10px] text-white/40 uppercase tracking-widest font-black mb-2">Need Support?</p>
+        <p className="text-[13px] text-white/60 mb-5 leading-relaxed font-medium">Questions about our legal standing or data practices?</p>
         <a 
             href="mailto:support@beeseek.site" 
             className="text-white text-sm font-bold flex items-center gap-2 hover:text-accent transition-colors underline decoration-accent/30 underline-offset-4"

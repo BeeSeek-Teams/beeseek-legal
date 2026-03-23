@@ -48,7 +48,7 @@ export default function DisputePage() {
         <ul>
           <li>Freeze wallet withdrawals for either or both parties during investigation.</li>
           <li>Override job status (escalate, cancel, or complete).</li>
-          <li>Force-cancel with full financial reversal (per the <a href="/refund" className="text-blue-600 hover:underline font-semibold">Cancellation &amp; Refund Policy</a>).</li>
+          <li>Force-cancel with full financial reversal (per the <a href="/refund">Cancellation &amp; Refund Policy</a>).</li>
           <li>Release or reverse escrow payments.</li>
           <li>Issue warnings or apply infractions per the <a href="/infractions" className="text-blue-600 hover:underline font-semibold">Service Level &amp; Infraction Policy</a>.</li>
         </ul>

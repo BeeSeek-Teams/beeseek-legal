@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FFFFFF;
+  --background: #FAFAFA;
   --foreground: #031745;
   
   /* BeeSeek Official Palette */
@@ -33,7 +33,7 @@
   --accent-light: var(--orange-light);
   --success: var(--green);
   --muted: var(--grey);
-  --surface: var(--neutral);
+  --surface: #FFFFFF;
   --border: #E5E5E5;
 }
 
@@ -76,7 +76,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-black/[0.06];
   }
   body {
     @apply bg-background text-foreground font-jakarta antialiased;
@@ -86,19 +86,28 @@
 
 @layer components {
   .legal-content h1 {
-    @apply text-3xl font-bold text-navy mb-6;
+    @apply text-3xl font-black text-navy mb-6 tracking-tight;
   }
   .legal-content h2 {
-    @apply text-xl font-bold text-navy mt-8 mb-4 border-b pb-2;
+    @apply text-lg font-bold text-navy mt-10 mb-4 pb-3 border-b border-black/[0.04];
   }
   .legal-content h3 {
-    @apply text-lg font-semibold text-navy mt-6 mb-3;
+    @apply text-base font-bold text-navy/90 mt-6 mb-3;
   }
   .legal-content p {
-    @apply text-grey-dark leading-relaxed mb-4;
+    @apply text-black/60 leading-[1.8] mb-4 text-[15px];
   }
-  .legal-content ul {
-    @apply list-disc pl-6 mb-4 space-y-2 text-grey-dark;
+  .legal-content ul, .legal-content ol {
+    @apply list-disc pl-6 mb-4 space-y-2.5 text-black/60 text-[15px] leading-[1.8];
+  }
+  .legal-content ol {
+    @apply list-decimal;
+  }
+  .legal-content li strong {
+    @apply text-navy/80 font-semibold;
+  }
+  .legal-content a {
+    @apply text-accent font-semibold hover:underline decoration-accent/30 underline-offset-2 transition-colors;
   }
   .legal-content section {
     @apply mb-10;

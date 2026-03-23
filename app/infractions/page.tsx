@@ -78,7 +78,7 @@ export default function InfractionsPage() {
 
       <section>
         <h2>8. RELATED POLICIES</h2>
-        <p>This Policy works in conjunction with the <a href="/refund" className="text-blue-600 hover:underline font-semibold">Cancellation &amp; Refund Policy</a>, <a href="/dispute" className="text-blue-600 hover:underline font-semibold">Dispute Resolution Policy</a>, and <a href="/community" className="text-blue-600 hover:underline font-semibold">Community Guidelines</a>.</p>
+        <p>This Policy works in conjunction with the <a href="/refund">Cancellation &amp; Refund Policy</a>, <a href="/dispute">Dispute Resolution Policy</a>, and <a href="/community">Community Guidelines</a>.</p>
       </section>
 
       <section>

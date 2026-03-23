@@ -49,7 +49,7 @@ export default function RefundPage() {
 
       <section>
         <h2>5. ADMIN FORCE-CANCEL</h2>
-        <p>Administrators can force-cancel any active or escalated job with full financial reversal, regardless of job step. Details are covered in the <a href="/infractions" className="text-blue-600 hover:underline font-semibold">Service Level &amp; Infraction Policy</a>.</p>
+        <p>Administrators can force-cancel any active or escalated job with full financial reversal, regardless of job step. Details are covered in the <a href="/infractions">Service Level &amp; Infraction Policy</a>.</p>
       </section>
 
       <section>
@@ -71,12 +71,12 @@ export default function RefundPage() {
 
       <section>
         <h2>8. NON-CANCELLABLE STEPS</h2>
-        <p>At steps beyond All Set, both apps display a <strong>&ldquo;Contact Support&rdquo;</strong> link. Support mediation may result in partial refunds, job escalation, material custody arrangements, or full resolution under the <a href="/dispute" className="text-blue-600 hover:underline font-semibold">Dispute Resolution Policy</a>.</p>
+        <p>At steps beyond All Set, both apps display a <strong>&ldquo;Contact Support&rdquo;</strong> link. Support mediation may result in partial refunds, job escalation, material custody arrangements, or full resolution under the <a href="/dispute">Dispute Resolution Policy</a>.</p>
       </section>
 
       <section>
         <h2>9. NO REFUNDS AFTER PAYMENT RELEASE</h2>
-        <p>Once escrow payment is released (manually by client or via 48-hour automatic release), the Job is considered COMPLETED. Post-completion refunds are handled exclusively through the <a href="/dispute" className="text-blue-600 hover:underline font-semibold">Dispute Resolution Policy</a>.</p>
+        <p>Once escrow payment is released (manually by client or via 48-hour automatic release), the Job is considered COMPLETED. Post-completion refunds are handled exclusively through the <a href="/dispute">Dispute Resolution Policy</a>.</p>
       </section>
 
       <section>
