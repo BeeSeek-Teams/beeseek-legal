@@ -24,6 +24,7 @@ const navItems = [
   { name: "Terms of Service", href: "/terms", icon: FileText },
   { name: "EULA", href: "/eula", icon: CloudArrowDown },
   { name: "Account Deletion", href: "/account-deletion", icon: UserMinus },
+  { name: "Delete My Account", href: "/delete-account", icon: UserMinus },
   { name: "Cancellation & Refund", href: "/refund", icon: ArrowsLeftRight },
   { name: "Community Guidelines", href: "/community", icon: Users },
   { name: "Dispute Resolution", href: "/dispute", icon: Gavel },
