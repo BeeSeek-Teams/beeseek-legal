@@ -77,12 +77,24 @@ export default function InfractionsPage() {
       </section>
 
       <section>
-        <h2>8. RELATED POLICIES</h2>
-        <p>This Policy works in conjunction with the <a href="/refund">Cancellation &amp; Refund Policy</a>, <a href="/dispute">Dispute Resolution Policy</a>, and <a href="/community">Community Guidelines</a>.</p>
+        <h2>8. LISTING FLAGGING SYSTEM</h2>
+        <p>BeeSeek operates a manual listing flagging system that allows administrators to flag individual service listings that violate platform policies, contain misleading information, or have been the subject of user complaints.</p>
+        <p><strong>Escalating Consequences:</strong></p>
+        <ul>
+          <li><strong>1st flag:</strong> Warning — Agent receives an email and in-app notification about the issue. The listing remains active.</li>
+          <li><strong>2nd flag:</strong> Listing Deactivated — The listing is hidden from search results. Agent is warned that a third flag will result in account suspension.</li>
+          <li><strong>3rd+ flag:</strong> Account Suspension — The listing is deactivated and the agent&rsquo;s account is suspended for 7 days. The agent cannot accept new jobs or appear in search results during the suspension period.</li>
+        </ul>
+        <p>For every flag, the agent receives an email, an in-app push notification, and an internal notification with the flag reason. Agents who believe a flag was issued in error may contact support.</p>
       </section>
 
       <section>
-        <h2>9. CONTACT</h2>
+        <h2>9. RELATED POLICIES</h2>
+        <p>This Policy works in conjunction with the <a href="/refund">Cancellation &amp; Refund Policy</a>, <a href="/dispute">Dispute Resolution Policy</a>, <a href="/community">Community Guidelines</a>, and <a href="/dual-accounts">Dual Account Policy</a>.</p>
+      </section>
+
+      <section>
+        <h2>10. CONTACT</h2>
         <p>For infraction-related inquiries, appeals, or support:</p>
         <ul>
           <li><strong>Email:</strong> support@beeseek.site</li>

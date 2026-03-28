@@ -15,7 +15,8 @@ import {
   WarningCircle, 
   HandPointing, 
   Copyright,
-  Scales
+  Scales,
+  UserSwitch
 } from "@phosphor-icons/react";
 import { clsx } from "clsx";
 
@@ -33,6 +34,7 @@ const navItems = [
   { name: "Safety Disclaimer", href: "/safety", icon: WarningCircle },
   { name: "Acceptable Use", href: "/acceptable-use", icon: HandPointing },
   { name: "Intellectual Property", href: "/ip", icon: Copyright },
+  { name: "Dual Accounts", href: "/dual-accounts", icon: UserSwitch },
 ];
 
 export default function SideNav({ onItemClick }: { onItemClick?: () => void }) {
