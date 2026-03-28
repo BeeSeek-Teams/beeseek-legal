@@ -28,6 +28,16 @@ export default function CommunityPage() {
             <li><strong>Transparency:</strong> No hidden costs. Always provide an itemized Service Quote before starting work.</li>
         </ul>
       </section>
+      <section>
+        <h2>4. AGENT ACHIEVEMENT BADGES</h2>
+        <p>BeeSeek awards achievement badges to Agents who meet specific criteria. Badges are visible on the Agent's profile.</p>
+        <ul>
+            <li><strong>Early Access:</strong> Awarded to founding Agents who registered during the BeeSeek beta phase. This badge cannot be requested and is granted from verified sign-up records.</li>
+            <li><strong>Top Rated:</strong> Awarded automatically to Agents who maintain a rating of 4.8 or above across at least 50 completed Jobs.</li>
+            <li><strong>Golden Badge:</strong> Handpicked by the BeeSeek team for exceptional, consistent service quality. There are no fixed numeric criteria.</li>
+        </ul>
+        <p>Attempting to manipulate metrics to obtain badges (e.g., creating fake Jobs, soliciting inflated reviews) will result in badge revocation and enforcement action.</p>
+      </section>
     </PolicyLayout>
   );
 }
