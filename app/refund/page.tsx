@@ -3,7 +3,7 @@ import PolicyLayout from "@/components/PolicyLayout";
 
 export default function RefundPage() {
   return (
-    <PolicyLayout title="Cancellation & Refund Policy" lastUpdated="March 23, 2026" version="4.0">
+    <PolicyLayout title="Cancellation & Refund Policy" lastUpdated="April 29, 2026" version="4.2">
       <section>
         <p>BeeSeek&rsquo;s cancellation system uses a balanced escrow approach to protect both Clients and Agents. All cancellations are processed within an atomic database transaction to ensure data integrity.</p>
       </section>
@@ -11,14 +11,14 @@ export default function RefundPage() {
       <section>
         <h2>1. JOB LIFECYCLE</h2>
         <p>A Job progresses through the following steps once active:</p>
-        <p><strong>All Set → Materials Purchased → On The Way → Arrived → Started → Finished → Home Safe</strong></p>
+        <p><strong>All Set → Materials Purchased → On The Way → Arrived → Started → Finished</strong></p>
         <p>Terminal statuses: <strong>Completed</strong>, <strong>Cancelled</strong>, <strong>Escalated</strong>.</p>
       </section>
 
       <section>
         <h2>2. SELF-SERVICE CANCELLATION</h2>
         <p>At the <strong>&ldquo;All Set&rdquo;</strong> stage (payment made, job confirmed), both parties may cancel via the in-app cancel button. A cancellation modal collects a required reason category and optional free-text context.</p>
-        <p>At any step beyond All Set, the cancel button is replaced with a <strong>&ldquo;Contact Support&rdquo;</strong> link. The backend API blocks cancellation entirely at the <strong>Started</strong>, <strong>Finished</strong>, and <strong>Home Safe</strong> steps.</p>
+        <p>At any step beyond All Set, the cancel button is replaced with a <strong>&ldquo;Contact Support&rdquo;</strong> link. The backend API blocks cancellation entirely at the <strong>Started</strong> and <strong>Finished</strong> steps.</p>
       </section>
 
       <section>
@@ -73,14 +73,18 @@ export default function RefundPage() {
         <h2>8. NON-CANCELLABLE STEPS</h2>
         <p>At steps beyond All Set, both apps display a <strong>&ldquo;Contact Support&rdquo;</strong> link. Support mediation may result in partial refunds, job escalation, material custody arrangements, or full resolution under the <a href="/dispute">Dispute Resolution Policy</a>.</p>
       </section>
-
       <section>
-        <h2>9. NO REFUNDS AFTER PAYMENT RELEASE</h2>
-        <p>Once escrow payment is released (manually by client or via 48-hour automatic release), the Job is considered COMPLETED. Post-completion refunds are handled exclusively through the <a href="/dispute">Dispute Resolution Policy</a>.</p>
+        <h2>9. ERRAND REQUEST TAKE-DOWN</h2>
+        <p>For pre-contract errand requests, Clients can take down eligible requests in-app (Open, Negotiating, Assigned). If a linked contract has already progressed to paid or active work states, take-down is blocked and support flow applies.</p>
       </section>
 
       <section>
-        <h2>10. CONTACT</h2>
+        <h2>10. NO REFUNDS AFTER PAYMENT RELEASE</h2>
+        <p>Once escrow payment is released (manually by client or via 72-hour automatic release), the Job is considered COMPLETED. Post-completion refunds are handled exclusively through the <a href="/dispute">Dispute Resolution Policy</a>.</p>
+      </section>
+
+      <section>
+        <h2>11. CONTACT</h2>
         <p>For cancellation-related inquiries or support-mediated cancellations:</p>
         <ul>
           <li><strong>Email:</strong> support@beeseek.site</li>

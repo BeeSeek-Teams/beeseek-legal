@@ -3,7 +3,7 @@ import PolicyLayout from "@/components/PolicyLayout";
 
 export default function InfractionsPage() {
   return (
-    <PolicyLayout title="Service Level & Infraction Policy" lastUpdated="March 23, 2026" version="1.0">
+    <PolicyLayout title="Service Level & Infraction Policy" lastUpdated="April 29, 2026" version="1.2">
       <section>
         <p>This Policy establishes enforceable service level expectations for Agents operating on the BeeSeek platform and defines the automated and manual enforcement mechanisms for violations. This policy is modelled after industry-standard practices used by leading service marketplaces and adapted for the Nigerian service context.</p>
       </section>
@@ -19,7 +19,7 @@ export default function InfractionsPage() {
 
       <section>
         <h2>2. AUTOMATED DETECTION</h2>
-        <p>BeeSeek operates a <strong>Stale Job Watchdog</strong> — an automated system that runs every 30 minutes to monitor job progress:</p>
+        <p>BeeSeek operates a <strong>Stale Job Watchdog</strong>, an automated system that runs every 30 minutes to monitor job progress:</p>
         <ul>
           <li><strong>No-Show Detection:</strong> Agent hasn&rsquo;t moved from &ldquo;All Set&rdquo; 2+ hours after scheduled start → Auto-escalation + infraction recorded.</li>
           <li><strong>Stale Transit Detection:</strong> Agent has been &ldquo;On The Way&rdquo; for 3+ hours → Auto-escalation + both parties notified.</li>
@@ -89,12 +89,22 @@ export default function InfractionsPage() {
       </section>
 
       <section>
-        <h2>9. RELATED POLICIES</h2>
+        <h2>9. ERRAND MATCHING EXPANSION</h2>
+        <p>Errand matching uses adaptive radius expansion to balance response speed with location relevance:</p>
+        <ul>
+          <li><strong>Normal errands:</strong> Start at 3km, expand by 2km every 2 minutes, max 12km.</li>
+          <li><strong>Emergency errands:</strong> Start at 4km, expand by 3km every 1 minute, max 12km.</li>
+          <li><strong>Pause on responses:</strong> If at least one offer exists, expansion pauses for that request.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>10. RELATED POLICIES</h2>
         <p>This Policy works in conjunction with the <a href="/refund">Cancellation &amp; Refund Policy</a>, <a href="/dispute">Dispute Resolution Policy</a>, <a href="/community">Community Guidelines</a>, and <a href="/dual-accounts">Dual Account Policy</a>.</p>
       </section>
 
       <section>
-        <h2>10. CONTACT</h2>
+        <h2>11. CONTACT</h2>
         <p>For infraction-related inquiries, appeals, or support:</p>
         <ul>
           <li><strong>Email:</strong> support@beeseek.site</li>

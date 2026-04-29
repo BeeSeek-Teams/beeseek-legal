@@ -3,7 +3,7 @@ import PolicyLayout from "@/components/PolicyLayout";
 
 export default function WalletPage() {
   return (
-    <PolicyLayout title="Payments & Wallet" lastUpdated="March 18, 2026" version="2.0">
+    <PolicyLayout title="Payments & Wallet" lastUpdated="April 29, 2026" version="2.2">
       <section>
         <p>BeeSeek's payment infrastructure is designed for the modern Nigerian service economy, combining secure virtual banking with escrow protection.</p>
       </section>
@@ -24,13 +24,17 @@ export default function WalletPage() {
       <section>
         <h2>3. SERVICE FEES AND COMMISSION</h2>
         <ul>
-            <li><strong>Service Fee (Client):</strong> ₦200 flat fee per Job.</li>
-            <li><strong>Commission (Agent):</strong> 5% of workmanship cost, deducted from payout.</li>
+            <li><strong>Task and Inspection:</strong> Client service fee is ₦200. Agent commission is 5% of workmanship.</li>
+            <li><strong>Errand:</strong> Client service fee is ₦0. Agent commission is 0%.</li>
         </ul>
       </section>
       <section>
         <h2>4. ESCROW MECHANISM</h2>
-        <p>Client funds are debited from their Wallet but held in escrow. Workmanship funds (minus commission) are only released once the Client confirms the Job or 72 hours have passed since work completion.</p>
+        <p>Client funds are debited from Wallet at payment. Transport and materials move to Agent accessible balance immediately. Workmanship is held in locked balance and released when the Client confirms completion or after 72 hours from Finished state.</p>
+      </section>
+      <section>
+        <h2>5. ERRAND OFFER NOTIFICATIONS</h2>
+        <p>When a Client selects an errand offer, BeeSeek notifies the selected Agent and also notifies non-selected Agents who submitted pending offers.</p>
       </section>
     </PolicyLayout>
   );

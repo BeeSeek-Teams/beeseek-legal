@@ -5,8 +5,8 @@ export default function TermsPage() {
   return (
     <PolicyLayout 
       title="Terms of Service" 
-      lastUpdated="March 18, 2026" 
-      version="2.0"
+      lastUpdated="April 29, 2026" 
+      version="2.2"
     >
       <section>
         <p>
@@ -21,7 +21,7 @@ export default function TermsPage() {
             <li><strong>"Client"</strong> refers to a user who hires and pays for services.</li>
             <li><strong>"Agent"</strong> refers to a professional who lists services ("Bees") and performs work.</li>
             <li><strong>"Escrow"</strong> refers to our secure payment-holding mechanism.</li>
-            <li><strong>"Arrival Code"</strong> is a 4-digit safety code provided by the Client to the Agent upon arrival.</li>
+            <li><strong>"Verification Code"</strong> is a 4-digit safety code used in workflow checkpoints. For regular jobs it is used at arrival. For errands it is used at final delivery confirmation.</li>
         </ul>
       </section>
 
@@ -44,29 +44,37 @@ export default function TermsPage() {
         <h3>3.2. ESCROW PAYMENTS</h3>
         <p>
             When a job is contracted, funds are moved to Escrow. 
-            <strong>Service Fee:</strong> ₦200 flat (charged to Client). 
-            <strong>Commission:</strong> 5% of workmanship (deducted from Agent payout).
+            <strong>Task and Inspection:</strong> Service Fee ₦200, Commission 5% of workmanship.
+            <strong>Errand:</strong> Service Fee ₦0, Commission 0%.
         </p>
       </section>
 
       <section>
         <h2>4. JOB LIFECYCLE & SAFETY</h2>
         <ul>
-            <li><strong>Arrival Verification:</strong> Agents must enter the Client's 4-digit Arrival Code to start the timer.</li>
+            <li><strong>Verification:</strong> Regular jobs use code at arrival. Errands use code at final delivery.</li>
             <li><strong>Auto-Release:</strong> If a Client does not release payment within 72 hours of work being marked "Finished", funds are automatically moved to the Agent's wallet.</li>
             <li><strong>SOS System:</strong> Provides one-tap access to 112/199/122 and opens the device SMS app with a pre-filled emergency message containing GPS coordinates to alert your emergency contact.</li>
         </ul>
       </section>
+      <section>
+        <h2>5. ERRAND DISCOVERY AND OFFER FLOW</h2>
+        <ul>
+            <li><strong>Adaptive Radius:</strong> Errands are matched using expanding distance rules with a maximum radius cap.</li>
+            <li><strong>Offer Outcome Notices:</strong> When a Client chooses one offer, selected and non-selected Agents receive notifications.</li>
+            <li><strong>Client Take-Down:</strong> Eligible pre-contract errand requests can be taken down by the Client in-app.</li>
+        </ul>
+      </section>
 
       <section>
-        <h2>5. INDEPENDENT CONTRACTOR STATUS</h2>
+        <h2>6. INDEPENDENT CONTRACTOR STATUS</h2>
         <p>
             Agents are <strong>Independent Contractors</strong> and not employees of BeeSeek. Agents set their own pricing (min ₦500), provide their own tools, and manage their own taxes. BeeSeek acts solely as a marketplace facilitator.
         </p>
       </section>
 
       <section>
-        <h2>6. LIMITATION OF LIABILITY</h2>
+        <h2>7. LIMITATION OF LIABILITY</h2>
         <p>
             BeeSeek is not liable for the quality of work performed, any property damage, or disputes arising between users. Users use the platform at their own risk.
         </p>
