@@ -3,7 +3,7 @@ import PolicyLayout from "@/components/PolicyLayout";
 
 export default function WalletPage() {
   return (
-    <PolicyLayout title="Payments & Wallet" lastUpdated="April 29, 2026" version="2.2">
+    <PolicyLayout title="Payments & Wallet" lastUpdated="May 1, 2026" version="2.3">
       <section>
         <p>BeeSeek's payment infrastructure is designed for the modern Nigerian service economy, combining secure virtual banking with escrow protection.</p>
       </section>
@@ -24,8 +24,9 @@ export default function WalletPage() {
       <section>
         <h2>3. SERVICE FEES AND COMMISSION</h2>
         <ul>
-            <li><strong>Task and Inspection:</strong> Client service fee is ₦200. Agent commission is 5% of workmanship.</li>
-            <li><strong>Errand:</strong> Client service fee is ₦0. Agent commission is 0%.</li>
+            <li><strong>Pilot Programme (Tasks and Errands):</strong> Client service fee is ₦0. Agent platform fee or commission is 0%.</li>
+            <li><strong>Other categories:</strong> Any applicable fee is displayed before checkout and payout confirmation.</li>
+            <li><strong>Notice:</strong> Pilot fee values may change after the programme period, with prior in-app notice and policy updates.</li>
         </ul>
       </section>
       <section>

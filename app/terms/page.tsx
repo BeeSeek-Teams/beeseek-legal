@@ -5,8 +5,8 @@ export default function TermsPage() {
   return (
     <PolicyLayout 
       title="Terms of Service" 
-      lastUpdated="April 29, 2026" 
-      version="2.2"
+      lastUpdated="May 1, 2026" 
+      version="2.3"
     >
       <section>
         <p>
@@ -44,13 +44,19 @@ export default function TermsPage() {
         <h3>3.2. ESCROW PAYMENTS</h3>
         <p>
             When a job is contracted, funds are moved to Escrow. 
-            <strong>Task and Inspection:</strong> Service Fee ₦200, Commission 5% of workmanship.
-            <strong>Errand:</strong> Service Fee ₦0, Commission 0%.
+            <strong>Pilot Programme (Tasks and Errands):</strong> Service Fee ₦0, Platform Fee or Commission 0%.
+            <strong>Other categories:</strong> Any applicable fee is shown clearly before payment confirmation.
+        </p>
+      </section>
+      <section>
+        <h2>4A. PILOT FEE NOTICE</h2>
+        <p>
+            BeeSeek is currently operating a pilot fee programme for Tasks and Errands. During this pilot, client-facing service fee and agent-facing platform fee or commission for Tasks and Errands are set to zero. These values may be updated in future policy versions with prior notice to users.
         </p>
       </section>
 
       <section>
-        <h2>4. JOB LIFECYCLE & SAFETY</h2>
+        <h2>5. JOB LIFECYCLE & SAFETY</h2>
         <ul>
             <li><strong>Verification:</strong> Regular jobs use code at arrival. Errands use code at final delivery.</li>
             <li><strong>Auto-Release:</strong> If a Client does not release payment within 72 hours of work being marked "Finished", funds are automatically moved to the Agent's wallet.</li>
@@ -58,7 +64,7 @@ export default function TermsPage() {
         </ul>
       </section>
       <section>
-        <h2>5. ERRAND DISCOVERY AND OFFER FLOW</h2>
+        <h2>6. ERRAND DISCOVERY AND OFFER FLOW</h2>
         <ul>
             <li><strong>Adaptive Radius:</strong> Errands are matched using expanding distance rules with a maximum radius cap.</li>
             <li><strong>Offer Outcome Notices:</strong> When a Client chooses one offer, selected and non-selected Agents receive notifications.</li>
@@ -67,14 +73,14 @@ export default function TermsPage() {
       </section>
 
       <section>
-        <h2>6. INDEPENDENT CONTRACTOR STATUS</h2>
+        <h2>7. INDEPENDENT CONTRACTOR STATUS</h2>
         <p>
             Agents are <strong>Independent Contractors</strong> and not employees of BeeSeek. Agents set their own pricing (min ₦500), provide their own tools, and manage their own taxes. BeeSeek acts solely as a marketplace facilitator.
         </p>
       </section>
 
       <section>
-        <h2>7. LIMITATION OF LIABILITY</h2>
+        <h2>8. LIMITATION OF LIABILITY</h2>
         <p>
             BeeSeek is not liable for the quality of work performed, any property damage, or disputes arising between users. Users use the platform at their own risk.
         </p>
